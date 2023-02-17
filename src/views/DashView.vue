@@ -393,7 +393,6 @@ main{
   padding-top: 3px;
   padding-bottom: 3px;
 }
-
 #third{
   z-index: 2;
   height: 100%;
@@ -469,6 +468,45 @@ main{
   align-items: center;
   color: #FFFFFF;
 }
+/*Scrollbar CSS*/
+.left::-webkit-scrollbar {
+  width: 5px;
+}
 
+.left::-webkit-scrollbar-thumb {
+  background-color: rgba(232, 198, 193, 0.795);
+}
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 124, 124);
+}
+/* Responsive */
+@media (max-width: 964px) {
+
+  main {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 10vh 200vh 60vh ;
+    height: 270vh;
+    background: #000000;
+  }
+  #first{
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  main .right {
+    background-color: rgb(244, 241, 232);
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+   }
+}
+/*# sourceMappingURL=style.css.map */
 </style>
