@@ -486,7 +486,14 @@ main{
 }
 /* Responsive */
 @media (max-width: 964px) {
-
+  *{
+    margin: 0px;
+    color: aliceblue;
+  }
+  body {
+    background: #000000;
+    height: 270vh;
+  }
   main {
     margin: 0 auto;
     width: 100%;
