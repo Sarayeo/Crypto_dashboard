@@ -77,7 +77,7 @@
           </div>
         </div>
         <div class="recent-trans">
-          <p>Recent transactions</p>
+          <p>Recent Transactions</p>
           <p>See all coins</p>
         </div>
         <div class="bitcoin_bar">
@@ -88,14 +88,14 @@
           </div>
           <div>
             <p>Market Cap</p>
-            <p>$40,243.70</p>
+            <p class="blue">$40,243.70</p>
           </div>
           <div>
             <p>24h change</p>
-            <p>+1,56</p>
+            <p class="vert">+1,56</p>
           </div>
           <img src="@/assets/images/color_line.png" alt="">
-          <div>
+          <div class="trade">
             <p>Trade</p>
           </div>
         </div>
@@ -107,14 +107,14 @@
           </div>
           <div>
             <p>Market Cap</p>
-            <p>$40,243.70</p>
+            <p class="violet">$40,243.70</p>
           </div>
           <div>
             <p>24h change</p>
-            <p>+1,56</p>
+            <p class="rouge">+1,56</p>
           </div>
-          <img src="@/assets/images/color_line.png" alt="">
-          <div>
+          <img src="@/assets/images/color_line2.png" alt="">
+          <div class="trade">
             <p>Trade</p>
           </div>
         </div>
@@ -166,7 +166,7 @@ export default {
   color: aliceblue;
 }
 body {
-   background: #000000;
+  background: #000000;
   height: 100vh;
 }
 main{
@@ -205,7 +205,7 @@ main{
 .inend{
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 300px;
   margin-left: 20%;
 }
 .inline img{
@@ -255,7 +255,7 @@ main{
   display: flex;
   flex-direction: row;
   margin-top: 2.5em;
-  gap: 10%;
+  gap: 15%;
   color: aliceblue;
 
 }
@@ -308,7 +308,88 @@ main{
   margin-top: 20px;
   background: #292727;
   border-radius: 12px;
+  gap: 15px;
 }
+.portfolio div{
+  margin-left: 15px;
+  padding-block: 5px;
+  padding-inline: 15px;
+  border-radius: 12px;
+  background: #0D0C0C;
+}
+.recent-trans{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: space-between;
+}
+.recent-trans p:nth-of-type(1){
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.recent-trans p:nth-of-type(2){
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.bitcoin_bar{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  gap: 5%;
+  background: rgba(32, 35, 43, 0.7);
+  backdrop-filter:blur(1px) ;
+  border-radius: 20px;
+}
+.bitcoin_bar img:nth-of-type(1){
+  width: 5%;
+  height: 3%;
+  margin-left: 40px;
+}
+.bitcoin_bar img:nth-of-type(2){
+  width: 20%;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.bitcoin_bar div p{
+  font-family: 'Inter',serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  opacity: 0.95;
+}
+.bitcoin_bar div .blue{
+  color: #1970D6;
+  opacity: 0.7;
+}
+.bitcoin_bar div .vert{
+  color: #4AD619;
+  opacity: 0.7;
+}
+.bitcoin_bar div .violet{
+  color: #6C1182;
+  opacity: 0.7;
+}
+.bitcoin_bar div .rouge{
+  color: #D61919;
+  opacity: 0.7;
+}
+
+
 #third{
   z-index: 2;
   height: 100%;
