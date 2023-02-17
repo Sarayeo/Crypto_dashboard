@@ -127,24 +127,24 @@
       </div>
       <h2>Assets</h2>
       <div>
-        <div>
+        <div class="card">
           <div>
             <img src="@/assets/images/bitcoin_other_col.png" alt="">
             <p>Bitcoin</p>
           </div>
-          <div>
+          <div class="rest">
             <p>121,6450.45</p>
             <p>BTC</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="card">
+          <div >
             <img src="@/assets/images/other_etherium.png" alt="">
-            <p>Bitcoin</p>
+            <p>Etherum</p>
           </div>
-          <div>
-            <p>121,6450.45</p>
-            <p>BTC</p>
+          <div class="rest">
+            <p>143,850.45</p>
+            <p>ETH</p>
           </div>
         </div>
       </div>
@@ -358,15 +358,12 @@ main{
   width: 20%;
   height: 15px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
-.bitcoin_bar div p{
+.bitcoin_bar div div p{
   font-family: 'Inter',serif;
+  width: 15px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   color: #FFFFFF;
@@ -388,7 +385,14 @@ main{
   color: #D61919;
   opacity: 0.7;
 }
-
+.bitcoin_bar div.trade{
+  background: #000000;
+  height: 20px;
+  border-radius: 10px;
+  padding-inline: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 
 #third{
   z-index: 2;
@@ -397,7 +401,74 @@ main{
   grid-row: 1/2;
 }
 .end img{
-  width: 280px;
+  width: 95%;
   height: auto;
 }
+#third h2{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  margin-left: 5%;
+
+  color: #FFFFFF;
+}
+.card:nth-of-type(1){
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+  border-radius: 25px;
+  margin-left: 5%;
+}
+.card:nth-of-type(2){
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+  border-radius: 30px;
+}
+.card div{
+  margin-left: 5%;
+}
+.card div img{
+  width: 20%;
+  margin: 2%;
+}
+.card div p{
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: 4%;
+  color: #FFFFFF;
+}
+.card .rest{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: 15px;
+}
+.card .rest p{
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+
 </style>
